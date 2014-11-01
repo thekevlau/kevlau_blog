@@ -6,7 +6,9 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
 
-    <!--link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"-->
+    <!-- this CSS file is the root of all problems with respect to getting things to look 'right'
+    there are some good fonts and other things in it though that i'll probably want to be visible down the road
+    link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"-->
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
