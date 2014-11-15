@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
+  <div class="wrapper">
+    {% include header.html %}
+    {% include navbar.html %}
+  </div>
 
   <body>
     <div class="wrapper">
-      {% include header.html %}
-      <section id="headerspace"></section>
       <section>
-        <p style="font-size:16px"> Hey there! I'm a junior at the <a href="https://news.ycombinator.com/item?id=6654796#up_6655271" target="_blank">University of Waterloo</a> majoring in systems engineering and design.
-            I co-founded <a href="http://hackthenorth.com" target="_blank">Hack the North</a> and am currently scaling a <a href="http://techyon.org" target="_blank">non-profit</a> working on accelerating Canada's entrepreneurial growth.
-            I formerly interned at <a href="http://brilliant.org" target="_blank">Brilliant</a> and <a href="http://blackberry.com" target="_blank">Blackberry</a>.
-        </p>
-
-      <!-- CONTENT INJECTION <div class="page-content">
+        {{ content }}
+      </section>
+      <!-- OLD CONTENT INJECTION
+      <div class="page-content">
         <div class="wrapper">
-          {{ content }}
         </div>
       </div> -->
       <!-- FOOTER spacing needs fixing and does not work yet {% include footer.html %} -->
-      </section>
+
     </div>
   </body>
 </html>
