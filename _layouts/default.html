@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <div class="wrapper">
-    {% include header.html %}
+  <div class="wrapper" style="height:0%">
+    <header>
+      {% include header.html %}
+    </header>
     {% include navbar.html %}
   </div>
-
   <body>
-    <div class="wrapper">
-      <section>
-        {{ content }}
-      </section>
+  <div class="wrapper" style="height:0%">
+    <section>
+      {{ content }}
+    </section>
       <!-- OLD CONTENT INJECTION
       <div class="page-content">
         <div class="wrapper">
@@ -18,6 +19,6 @@
       </div> -->
       <!-- FOOTER spacing needs fixing and does not work yet {% include footer.html %} -->
 
-    </div>
+  </div>
   </body>
 </html>

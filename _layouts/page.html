@@ -1,17 +1,22 @@
----
-layout: default
----
-
-{{ content }}
-
-<!-- <div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+<div class="wrapper">
+  <header>
+    {% include header.html %}
+    {% include sidenavbar.html %}
   </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
 </div>
+<div class="wrapper">
+  <section>
+    {{ content }}
+  </section>
+      <!-- OLD CONTENT INJECTION
+      <div class="page-content">
+        <div class="wrapper">
+        </div>
+      </div> -->
+      <!-- FOOTER spacing needs fixing and does not work yet {% include footer.html %} -->
+
+  </div>
+</html>

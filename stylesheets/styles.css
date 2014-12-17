@@ -24,6 +24,12 @@ h1 {
   font-size:28px;
 }
 
+.wrapper {
+  width:860px;
+  height:7px;
+  margin:0 auto;
+}
+
 section#headerspace {
   width:500px;
   float:right;
@@ -54,11 +60,6 @@ a small {
   color:#777;
   margin-top:-0.6em;
   display:block;
-}
-
-.wrapper {
-  width:860px;
-  margin:0 auto;
 }
 
 blockquote {
@@ -194,9 +195,10 @@ footer {
 
 @media print, screen and (max-width: 960px) {
   
-  div.wrapper {
+  .wrapper {
     width:auto;
     margin:0;
+    height:0%;
   }
   
   header, section, footer {
