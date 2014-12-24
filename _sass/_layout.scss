@@ -25,7 +25,7 @@
 
 .side-navbar {
     color:#2a7ae2;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .site-nav {
@@ -45,7 +45,7 @@
             margin-left: 20px;
         }
     }
-    
+
     @include media-query($on-palm) {
         position: absolute;
         top: 9px;
