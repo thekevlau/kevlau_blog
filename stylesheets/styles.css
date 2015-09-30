@@ -50,7 +50,8 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
+  /*color:#39c;*/
+  color:#279BEA;
   font-weight:400;
   text-decoration:none;
 }
@@ -176,7 +177,7 @@ section {
 }
 
 small {
-  font-size:11px;
+  font-size:13px;
 }
 
 hr {
@@ -187,7 +188,7 @@ hr {
 }
 
 footer {
-  width:270px;
+  width:860px;
   float:left;
   position:fixed;
   bottom:50px;
